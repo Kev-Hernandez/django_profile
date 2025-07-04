@@ -1,0 +1,49 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Portafolio{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/portfolio2.jpeg' %}{% endblock %}
+
+{% block headers %}
+<h1>Portafolio</h1>
+<span class="subheading">Currículo</span>
+{% endblock %}
+
+{% block content %}
+  <!-- Proyecto 1: Buscador de Recetas -->
+  <div class="row project">  	
+      <div class="col-lg-3 col-md-4 offset-lg-1">
+          <img class="img-fluid" src="{% static 'core/img/recetas.jpg' %}" alt="Buscador de Recetas">
+      </div>
+      <div class="col-lg-7 col-md-8">
+          <h2 class="section-heading title">Buscador de Recetas</h2>   
+          <p>Aplicación web que permite buscar recetas según ingredientes disponibles. Utiliza una API externa y muestra resultados con instrucciones paso a paso. Ideal para cocinar con lo que tienes en casa.</p>
+          <p><a href="https://recetas-kev.vercel.app/" target="_blank">Más información</a></p>
+      </div>
+  </div>
+
+  <!-- Proyecto 2: Recomendador de Películas -->
+  <div class="row project">  	
+      <div class="col-lg-3 col-md-4 offset-lg-1">
+          <img class="img-fluid" src="{% static 'core/img/peli.jpg' %}" alt="Recomendador de Películas">
+      </div>
+      <div class="col-lg-7 col-md-8">
+          <h2 class="section-heading title">Recomendador de Películas</h2>   
+          <p>Plataforma que sugiere películas personalizadas, pensada para mejorar tu experiencia cinematográfica: solo ingresa tu edad y selecciona el género que más te guste. El sistema te recomendará tu película ideal basada en tu perfil</p>
+          <p><a href="https://kev-hernandez.github.io/Peliculas_kehc/" target="_blank">Más información</a></p>
+      </div>
+  </div>
+
+  <!-- Proyecto 3: Lista de Tareas (ToDo List) -->
+  <div class="row project">  	
+      <div class="col-lg-3 col-md-4 offset-lg-1">
+          <img class="img-fluid" src="{% static 'core/img/list.jpg' %}" alt="Lista de Tareas">
+      </div>
+      <div class="col-lg-7 col-md-8">
+          <h2 class="section-heading title">Lista de Tareas (ToDo List)</h2>   
+          <p>Aplicación simple y funcional para gestionar tus tareas diarias. Permite agregar, editar, marcar como completadas y eliminar tareas, con una interfaz limpia y responsiva.</p>
+          <p><a href="https://kevdev23.pythonanywhere.com/" target="_blank">Más información</a></p>
+      </div>
+  </div>
+{% endblock %}
+

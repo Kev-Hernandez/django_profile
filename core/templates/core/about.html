@@ -1,0 +1,23 @@
+{% extends 'core/base.html' %}
+
+{% block title %}Acerca de{% endblock %}
+
+{% block background %}{% load static %}{% static 'core/img/about2.avif' %}{% endblock %}
+
+{% block headers %}
+<h1>Acerca de</h1>
+<span class="subheading">Biografía</span>
+{% endblock %}
+
+{% block content %}
+<div class="row"> 
+    <div class="col-lg-3 col-md-4 offset-lg-1">
+        <img class="img-fluid avatar" src="{% static 'core/img/avatar2.jpg' %}" alt="">
+    </div>
+    <div class="col-lg-7 col-md-8">
+        <h2 class="section-heading">Kevin Hernandez</h2>   
+        <p>Nacido en el Estado de México y formado en la Universidad Autónoma del Estado de México (UAEMex) y actual estudiante un la UTVT como Desarrollador de Software.</p>
+        <p>He trabajado en proyectos de desarrollo de software, con experiencia en metodologías ágiles, inteligencia artificial y aplicaciones web y móviles. Actualmente, soy desarrollador y estudiante de ingeniería en desarrollo de software, enfocado en crear soluciones tecnológicas innovadoras y funcionales.</p>
+    </div>
+</div>
+{% endblock %}
